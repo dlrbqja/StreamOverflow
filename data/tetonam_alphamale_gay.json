@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "메스머라이저(メズマライザー)",
+    "jakgokga": "사츠키",
+    "vocal": "하츠네 미쿠 & 카사네 테토 SV",
+    "illust": "channel",
+    "bpm": "185",
+    "length": "2:37",
+    "source": "19y8YTbvri8",
+    "tag": ["경쾌한", "밝음", "빠른", "잠재적 공포요소", "청량감"]
+  },
+  {
+    "id": 2,
+    "name": "약자의 행진(弱者のマーチ)",
+    "jakgokga": "에이푸(えいぷ)",
+    "vocal": "카사네 테토 SV",
+    "illust": "요미탄 아카네(読谷あかね)",
+    "bpm": "125",
+    "length": "3:12",
+    "source": "IxSvgPhdc8c",
+    "tag": ["에너지틱", "풍자", "서사", "위로", "비트"]
+  },
+  {
+    "id": 3,
+    "name": "Canto IX Boss 6 Battle Theme (중지 아비 전투 BGM)",
+    "jakgokga": "Studio EIM",
+    "bpm": "128",
+    "length": "3:09",
+    "source": "e42u_cIreaQ",
+    "tag": ["EDM", "에너지틱", "비트", "전투"]
+  },
+  {
+    "id": 4,
+    "name": "Canto VIII Boss 2 Battle Theme (뇌횡 전투 BGM)",
+    "jakgokga": "Studio EIM",
+    "bpm": "125",
+    "length": "3:34",
+    "source": "n1cHbmKFFNA",
+    "tag": ["클래식", "드라마틱", "전투", "웅장함", "몰입", "쾌도난마"]
+  },
+  {
+    "id": 5,
+    "name": "오버라이드(オーバーライド)",
+    "jakgokga": "요시다 야세이(吉田夜世)",
+    "vocal": "카사네 테토 SV",
+    "bpm": "204",
+    "length": "2:19",
+    "source": "LLjfal8jCYI",
+    "tag": ["빠른", "정신없이 몰아치는", "시원시원함", "청량감"]
+  },
+  {
+    "id": 6,
+    "name": "스플릿 댄스(スプリットダンス)",
+    "jakgokga": "에이푸(えいぷ)",
+    "vocal": "하츠네 미쿠 & 카사네 테토 SV",
+    "illust": "金属8g, 梅かっぱ",
+    "bpm": "185",
+    "length": "2:27",
+    "source": "R401j1QAvEg",
+    "tag": ["통통 튀는 비트", "시원시원함", "신나는", "밝음"]
+  },
+  {
+    "id": 7,
+    "name": "차원통신(次元通信)",
+    "jakgokga": "뭐든지모에화(ABM)",
+    "vocal": "하츠네 미쿠 & 카사네 테토 SV",
+    "illust": "뭐든지모에화(ABM)",
+    "bpm": "150",
+    "length": "2:59",
+    "source": "PqpCRSOUuIE",
+    "tag": ["통통 튀는 비트", "그림체가 맛있음","전자음"]
+  },
+  {
+    "id": 8,
+    "name": "야라라라(ヤラララ)",
+    "jakgokga": "뭐든지모에화(ABM)",
+    "vocal": "카사네 테토 SV2",
+    "illust": "뭐든지모에화(ABM)",
+    "bpm": "128",
+    "length": "2:36",
+    "source": "T24rF_x0TmQ",
+    "tag": ["비트", "타격감", "쾌감", "강렬한"]
+  },
+  {
+    "id": 9,
+    "name": "의욕이 안 나는 노래(やる気が出ない歌)",
+    "jakgokga": "에이푸(えいぷ)",
+    "vocal": "하츠네 미쿠 & 카사네 테토 SV",
+    "illust": "金属8g",
+    "bpm": "205",
+    "length": "2:24",
+    "source": "xAwnI9AraXs",
+    "tag": ["비트", "강렬한", "쾌감", "시원시원한", "풍자", "통통 튀는 비트", "귀여운", "빠른"]
+  },
+  {
+    "id": 10,
+    "name": "TIAN TIAN",
+    "jakgokga": "Cassie Wei, Yamato Kasai",
+    "vocal": "Cassie Wei",
+    "illust": "Ao Fujimori",
+    "bpm": "2",
+    "length": "4:14",
+    "source": "szyPY8nbBF4",
+    "tag": ["밝은", "몽환적", "서사", "전투", "시원시원한", "청량감", "인지초 성본선 성상근 습상원(人之初，性本善，性相近，習相遠)"]
+  }
+]
