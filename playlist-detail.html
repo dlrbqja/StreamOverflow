@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/common.js"></script>
+    <script src="./js/playlists-data.js"></script>
+    <script src="./js/playlists.js"></script>
+    <title>플레이리스트 상세 - Stream Overflow</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="text">Stream Overflow</h1>
+        <a class="button button-header" href="./playlist.html">플리</a>
+      </header>
+      <section class="contents playlist-detail-contents">
+        <div id="playlist-detail" class="playlist-detail">
+          <section class="playlist-player-panel">
+            <div>
+              <h2 id="playlist-title" class="playlist-detail-title"></h2>
+              <p id="playlist-description" class="playlist-description"></p>
+              <p id="playlist-meta" class="playlist-meta"></p>
+            </div>
+            <div class="playlist-now">
+              <button id="playlist-play" class="button playlist-play" type="button">재생</button>
+              <div class="playlist-now-text">
+                <span class="song-label">현재 노래</span>
+                <strong id="current-track"></strong>
+                <span id="current-length"></span>
+              </div>
+            </div>
+            <div id="playlist-player" class="playlist-player"></div>
+          </section>
+          <section class="playlist-track-panel">
+            <h3 class="playlist-section-title">수록곡</h3>
+            <ol id="playlist-tracks" class="playlist-tracks"></ol>
+          </section>
+        </div>
+      </section>
+      <footer class="footer">
+        <p class="footer-text">수록곡 상세 확인은 새 탭에서 열립니다.</p>
+      </footer>
+    </div>
+  </body>
+</html>

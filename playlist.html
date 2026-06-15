@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/common.js"></script>
-    <script src="./js/recommend.js"></script>
-    <title>추천 - Stream Overflow</title>
+    <script src="./js/playlists-data.js"></script>
+    <script src="./js/playlists.js"></script>
+    <title>플레이리스트 - Stream Overflow</title>
   </head>
   <body>
     <div class="container">
@@ -15,11 +16,15 @@
         <h1 class="text">Stream Overflow</h1>
         <a class="button button-header" href="./index.html">목록</a>
       </header>
-      <section class="contents recommend-contents">
-        <div id="survey" class="survey"></div>
+      <section class="contents playlist-contents">
+        <div class="playlist-toolbar">
+          <input id="playlist-search" type="text" placeholder="노래 검색" />
+          <a class="button playlist-create" href="./recommend.html">추천 받기</a>
+        </div>
+        <div id="playlist-list" class="playlist-list"></div>
       </section>
       <footer class="footer">
-        <p class="footer-text">태그를 분석해서 지금 기분에 맞는 노래를 추천합니다.</p>
+        <p class="footer-text">분위기별로 묶은 플레이리스트를 골라보세요.</p>
       </footer>
     </div>
   </body>

@@ -5,21 +5,25 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/loader.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/songs.js"></script>
     <title>Stream Overflow</title>
   </head>
   <body>
     <div class="container">
       <header class="header">
+        <nav class="header-nav">
+          <a class="button nav-link" href="./playlist.html">플리</a>
+          <a class="button nav-link" href="./recommend.html">추천</a>
+        </nav>
         <h1 class="text">Stream Overflow</h1>
-        <a class="button-header button" href="./recommend.html">추천</a>
       </header>
       <section class="contents">
         <input id="search" type="text" placeholder="노래 검색" />
         <div id="list" class="list"></div>
       </section>
       <footer class="footer">
-        <p class="footer-text">설문으로 지금 기분에 맞는 노래를 찾아보세요.</p>
+        <p class="footer-text">설문과 플레이리스트로 지금 들을 곡을 찾아보세요.</p>
       </footer>
     </div>
   </body>
