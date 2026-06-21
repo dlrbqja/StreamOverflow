@@ -53,11 +53,11 @@ function createPlaylistCard(playlist, songs) {
   meta.className = "playlist-meta";
   meta.textContent = `${playlistSongs.length}곡 · ${formatSeconds(getPlaylistLength(playlistSongs))}`;
 
-  const tags = document.createElement("p");
-  tags.className = "playlist-tags";
-  tags.textContent = getPlaylistTags(playlistSongs).join(" · ");
+  const desc = document.createElement("p");
+  desc.className = "playlist-desc";
+  desc.textContent = playlist.description;
 
-  body.append(title, meta, tags);
+  body.append(title, meta, desc);
 
   const detail = document.createElement("a");
   detail.className = "button detail-link";

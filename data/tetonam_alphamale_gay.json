@@ -37,7 +37,7 @@
     "bpm": "125",
     "length": "3:34",
     "source": "n1cHbmKFFNA",
-    "tag": ["클래식", "드라마틱", "전투", "웅장함", "몰입", "쾌도난마"]
+    "tag": [ "드라마틱", "전투", "웅장함", "쾌도난마"]
   },
   {
     "id": 5,
@@ -99,9 +99,59 @@
     "jakgokga": "Cassie Wei, Yamato Kasai",
     "vocal": "Cassie Wei",
     "illust": "Ao Fujimori",
-    "bpm": "2",
+    "bpm": "몰라 ㅅㄱ",
     "length": "4:14",
     "source": "szyPY8nbBF4",
-    "tag": ["밝음", "몽환적", "서사", "전투", "시원시원함", "청량감", "인지초 성본선 성상근 습상원(人之初，性本善，性相近，習相遠)"]
+    "tag": ["밝음", "서사", "전투", "시원시원함", "청량감", "인지초 성본선 성상근 습상원(人之初，性本善，性相近，習相遠)"]
+  },
+  {
+    "id": 11,
+    "name": "Hero",
+    "jakgokga": "Cassie Wei, Yamato Kasai",
+    "vocal": "Cassie Wei",
+    "illust": "Ao Fujimori",
+    "bpm": "?",
+    "length": "3:34",
+    "source": "ZuifkacZ0TA",
+    "tag": ["밝음", "몽환적", "서사", "전투", "나는 내 가장 큰 친구이자 적"]
+  },
+  {
+    "id": 12,
+    "name": "Canto V Boss 1 Battle Theme (리카르도 전투 BGM)",
+    "jakgokga": "Studio EIM",
+    "bpm": "?",
+    "length": "3:02",
+    "source": "xF-Vl63IY10",
+    "tag": ["EDM", "에너지틱", "비트","전투", "긴장감"]
+  },
+  {
+    "id": 13,
+    "name": "Canto IX Boss 1 Battle Theme 2 (엄지 아비 전투 BGM)",
+    "jakgokga": "Studio EIM",
+    "bpm": "?",
+    "length": "3:02",
+    "source": "W-BobfNM1tg",
+    "tag": ["긴장감", "시원시원함", "웅장함", "전투"]
+  },
+  {
+    "id": 14,
+    "name": "Canto IX Boss 3 Battle Theme 2 (약지 아비 전투 BGM)",
+    "jakgokga": "Studio EIM",
+    "bpm": "?",
+    "length": "3:02",
+    "source": "BuzAgy_88HM",
+    "tag": ["클래식", "긴장감", "몰입", "전투"]
+  },
+  {
+    "id": 15,
+    "name": "SAIKAI",
+    "jakgokga": "Cassie Wei, Yamato Kasai",
+    "vocal": "Cassie Wei",
+    "illust": "Ao Fujimori",
+    "bpm": "?",
+    "length": "5:23",
+    "source": "h0djuhl97Kw",
+    "tag": ["잔잔함", "슬픔", "서사", "전투", "S는 사요나라를 말하는게 아니니까"]
   }
+
 ]

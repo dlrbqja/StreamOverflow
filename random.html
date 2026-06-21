@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/common.js"></script>
+    <script src="./js/random.js"></script>
+    <title>노래 뽑기 - Stream Overflow</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="text">Stream Overflow</h1>
+        <a class="button button-header" href="./index.html">목록</a>
+      </header>
+      <section class="contents">
+        <div class="survey">
+          <div style="text-align: center;">
+            <h2 class="text" style="margin: 0 0 var(--space-1); color: var(--color-text-strong); font-size: 1.35rem; font-weight: normal; letter-spacing: 0.05em;">노래 뽑기</h2>
+            <p class="text" style="margin: 0; font-size: 0.95rem;">무작위 노래를 한 곡 뽑아 보여줍니다.</p>
+          </div>
+          <div id="random-card" class="survey-panel" style="min-height: auto; width: min(100%, 30rem); padding: var(--space-3); gap: var(--space-3);">
+            <!-- Loaded dynamically by JS -->
+          </div>
+          <button id="draw-btn" class="button survey-retry" style="margin-top: var(--space-3); width: 8rem; height: 2.25rem; font-size: 1rem;" type="button">뽑기</button>
+        </div>
+      </section>
+      <footer class="footer">
+        <p class="footer-text">샌즈</p>
+      </footer>
+    </div>
+  </body>
+</html>

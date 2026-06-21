@@ -79,7 +79,7 @@ body {
   border-bottom: var(--line-width) solid var(--color-line);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   padding-inline: var(--space-3);
 }
 
@@ -427,13 +427,14 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  color: var(--color-text-strong)
 }
 
 .playlist-meta,
 .playlist-tags,
 .playlist-description {
   margin: var(--space-1) 0 0;
-  color: var(--color-text-strong);
+  color: var(--color-text);
   font-size: 0.875rem;
   line-height: 1.35;
 }
@@ -623,3 +624,4 @@ body {
     flex-direction: column;
   }
 }
+

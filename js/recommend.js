@@ -196,6 +196,10 @@ async function initRecommendation() {
     survey.textContent = "추천 데이터를 불러오지 못했습니다.";
     console.error(error);
   }
+
+  segmaboy_mother = null;
+  segmaboy_father = 2;
+  console.log("세그마보이는 상속받은 클래스가 아니다!!!!!!!!!");
 }
 
 document.addEventListener("DOMContentLoaded", initRecommendation);
