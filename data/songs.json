@@ -110,7 +110,6 @@
     "jakgokga": "Cassie Wei, Yamato Kasai",
     "vocal": "Cassie Wei",
     "illust": "Ao Fujimori",
-    "bpm": "?",
     "length": "3:34",
     "source": "ZuifkacZ0TA",
     "tag": ["밝음", "몽환적", "서사", "전투", "나는 내 가장 큰 친구이자 적"]
@@ -119,7 +118,6 @@
     "id": 12,
     "name": "Canto V Boss 1 Battle Theme (리카르도 전투 BGM)",
     "jakgokga": "Studio EIM",
-    "bpm": "?",
     "length": "3:02",
     "source": "xF-Vl63IY10",
     "tag": ["EDM", "에너지틱", "비트","전투", "긴장감"]
@@ -128,7 +126,6 @@
     "id": 13,
     "name": "Canto IX Boss 1 Battle Theme 2 (엄지 아비 전투 BGM)",
     "jakgokga": "Studio EIM",
-    "bpm": "?",
     "length": "3:02",
     "source": "W-BobfNM1tg",
     "tag": ["긴장감", "시원시원함", "웅장함", "전투"]
@@ -137,7 +134,6 @@
     "id": 14,
     "name": "Canto IX Boss 3 Battle Theme 2 (약지 아비 전투 BGM)",
     "jakgokga": "Studio EIM",
-    "bpm": "?",
     "length": "3:02",
     "source": "BuzAgy_88HM",
     "tag": ["클래식", "긴장감", "몰입", "전투"]
@@ -148,10 +144,47 @@
     "jakgokga": "Cassie Wei, Yamato Kasai",
     "vocal": "Cassie Wei",
     "illust": "Ao Fujimori",
-    "bpm": "?",
     "length": "5:23",
     "source": "h0djuhl97Kw",
     "tag": ["잔잔함", "슬픔", "서사", "전투", "S는 사요나라를 말하는게 아니니까"]
+  },
+  {
+    "id": 16,
+    "name": "Shiawase(VIP)",
+    "jakgokga": "Dion Timmer",
+    "length": "3:02",
+    "source": "G-9EEDWvg9E",
+    "tag": ["청량감", "시원시원함"]
+  },
+  {
+    "id": 16,
+    "name": "나의 고향(わたしのふるさと)",
+    "jakgokga": "우리 보카로가 뭔가 이상해(うちのボカロは様子がおかしい)",
+    "vocal": "하츠네 미쿠, 카사네 테토, 우이",
+    "illust": "사카사나 (サカセサナ), 츠키미 (月咲)",
+    "length": "2:10",
+    "source": "CgRmvHdNbM8",
+    "tag": ["몽환적", "잠재적 공포요소", "서사", "몰입", "귀여운"]
+  },
+  {
+    "id": 17,
+    "name": "나의 고향(わたしのふるさと)",
+    "jakgokga": "우리 보카로가 뭔가 이상해(うちのボカロは様子がおかしい)",
+    "vocal": "하츠네 미쿠, 카사네 테토, 우이",
+    "illust": "사카사나 (サカセサナ), 츠키미 (月咲)",
+    "length": "2:17",
+    "source": "92hlIir1JLN3x8aj",
+    "tag": ["잠재적 공포요소","몰입", "귀여운"]
+  },
+  {
+    "id": 17,
+    "name": "나의 고향(わたしのふるさと)",
+    "jakgokga": "우리 보카로가 뭔가 이상해(うちのボカロは様子がおかしい)",
+    "vocal": "하츠네 미쿠, 카사네 테토, 우이",
+    "illust": "사카사나 (サカセサナ), 츠키미 (月咲)",
+    "length": "2:17",
+    "source": "92hlIir1JLN3x8aj",
+    "tag": ["잠재적 공포요소", "귀여운"]
   }
 
 ]

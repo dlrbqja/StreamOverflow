@@ -568,6 +568,48 @@ body {
   padding-inline: var(--space-2);
 }
 
+
+.panel {
+  width: min(100%, 46rem);
+  border: var(--line-width) solid var(--color-line);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  background-color: var(--color-panel); 
+  box-sizing: border-box;
+}
+.option {
+  width: min(45%, 18rem);
+  min-height: 24rem;
+  border: var(--line-width) solid var(--color-line);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-3);
+  background-color: var(--color-bg);
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.aaaa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+.aaa {
+  color: var(--color-text-strong);
+  font-size: 1.25rem;
+  margin: 0;
+}
+.aa {
+  color: var(--color-text-strong);
+  font-size: 1.75rem;
+  margin: var(--space-1) 0 0;
+}
 @media (max-width: 40rem) {
   .contents {
     padding: var(--space-2);
@@ -624,4 +666,126 @@ body {
     flex-direction: column;
   }
 }
+
+/* VS Page Styles */
+.vs-contents {
+  overflow-y: auto;
+}
+
+.vs-header-group {
+  text-align: center;
+  margin-bottom: var(--space-2);
+}
+
+.vs-title {
+  margin: 0 0 var(--space-1);
+  color: var(--color-text-strong);
+  font-weight: normal;
+  letter-spacing: 0.05em;
+}
+
+.vs-desc {
+  margin: 0;
+  color: var(--color-text);
+}
+
+.vs-start-panel {
+  min-height: auto;
+  width: min(100%, 26rem);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.vs-start-btn {
+  width: 100%;
+  height: 3rem;
+}
+
+.vs-divider {
+  font-size: 3.5rem;
+  color: var(--color-text-strong);
+  font-family: var(--font-main);
+  user-select: none;
+}
+
+.vs-winner-panel {
+  width: min(100%, 32rem);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: center;
+  min-height: auto;
+}
+
+.vs-winner-player {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.vs-winner-info {
+  text-align: center;
+  margin-block: var(--space-2);
+}
+
+.vs-btn-group {
+  display: flex;
+  gap: var(--space-3);
+  width: 100%;
+  margin-top: var(--space-2);
+}
+
+.vs-action-btn {
+  flex: 1;
+  height: 2.75rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vs-option-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.vs-option-text {
+  text-align: center;
+  width: 100%;
+  margin-block: var(--space-2);
+}
+
+.vs-option-title {
+  color: var(--color-text-strong);
+  font-family: var(--font-main);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.vs-option-composer {
+  color: var(--color-text);
+  font-family: var(--font-main);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  margin-top: var(--space-1);
+}
+
+.vs-option-btn {
+  width: 6rem;
+  height: 2rem;
+}
+
 

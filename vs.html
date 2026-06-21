@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/common.js"></script>
+    <script src="./js/vs.js"></script>
+    <title>갈드컵 - Stream Overflow</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="header-nav">
+          <a class="button nav-link" href="./index.html">홈화면</a> 
+          <a class="button nav-link" href="./vs.html">갈드컵</a> 
+          <a class="button nav-link" href="./playlist.html">플리</a>
+          <a class="button nav-link" href="./recommend.html">추천</a>
+          <a class="button nav-link" href="./random.html">뽑기</a>
+        </nav>
+        <h1 class="text">Stream Overflow</h1>
+      </header>
+      
+      <section class="contents vs-contents">
+        <!-- 1. Start Screen -->
+        <div id="start-screen" class="survey">
+          <div class="vs-header-group">
+            <h2 class="text vs-title" style="font-size: 1.5rem;">노래 월드컵</h2>
+            <p class="text vs-desc" style="font-size: 1rem;">최고의 노래를 골라보세요!</p>
+          </div>
+          <div class="survey-panel vs-start-panel">
+            <button class="button survey-retry vs-start-btn" id="start-16" style="font-size: 1.15rem;" type="button">16강 시작</button>
+            <button class="button survey-retry vs-start-btn" id="start-8" style="font-size: 1.15rem;" type="button">8강 시작</button>
+            <button class="button survey-retry vs-start-btn" id="start-4" style="font-size: 1.15rem;" type="button">4강 시작</button>
+          </div>
+        </div>
+
+        <!-- 2. Game Screen -->
+        <div id="game-screen" class="survey" style="display: none;">
+          <div class="aaaa">
+            <h2 id="match-round" class="aaa">16강 (1/8)</h2>
+            <p class="aa">둘 중 더 좋은 노래는?</p>
+          </div>
+          <div class="panel">
+            <!-- Left Option -->
+            <div id="left-option" class="option">
+              <!-- Loaded dynamically by JS -->
+            </div>
+            
+            <span class="vs-divider" style="font-size: 3.5rem;">VS</span>
+            
+            <!-- Right Option -->
+            <div id="right-option" class="option">
+              <!-- Loaded dynamically by JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Winner Screen -->
+        <div id="winner-screen" class="survey" style="display: none;">
+          <div class="vs-header-group">
+            <h2 class="text vs-title" style="font-size: 1.75rem;">🏆 우승! 🏆</h2>
+            <p class="text vs-desc" style="font-size: 1.15rem;">당신이 선택한 최고의 노래는?</p>
+          </div>
+          <div class="survey-panel vs-winner-panel">
+            <div id="winner-player" class="vs-winner-player"></div>
+            <div class="vs-winner-info">
+              <h3 id="winner-title" class="text vs-title" style="font-size: 1.35rem;">제목</h3>
+              <p id="winner-composer" class="text vs-desc" style="font-size: 1rem;">작곡가</p>
+            </div>
+            <div class="vs-btn-group">
+              <button id="restart-btn" class="button survey-retry vs-action-btn" style="font-size: 1.05rem;" type="button">다시 하기</button>
+              <a class="button survey-retry vs-action-btn" href="./index.html" style="font-size: 1.05rem;">홈으로</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <footer class="footer">
+        <p class="footer-text">샌즈</p>
+      </footer>
+    </div>
+  </body>
+</html>
