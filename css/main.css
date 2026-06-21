@@ -248,6 +248,10 @@ body {
 
 .detail-row .song-value {
   flex: 1;
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 #search {
@@ -787,5 +791,4 @@ body {
   width: 6rem;
   height: 2rem;
 }
-
 
