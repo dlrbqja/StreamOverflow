@@ -1,4 +1,5 @@
-const songFiles = ["./data/tetonam_alphamale_gay.json"];
+const songFiles = ["./data/songs.json"];
+const playlistFile = "./data/playlists-data.json";
 
 const labels = {
   id: "ID",
@@ -130,4 +131,14 @@ async function loadSongData() {
   );
 
   return files.flat();
+}
+
+async function loadPlaylistData() {
+  const response = await fetch(playlistFile);
+
+  if (!response.ok) {
+    throw new Error(`${playlistFile} 파일을 불러오지 못했습니다.`);
+  }
+
+  return response.json();
 }

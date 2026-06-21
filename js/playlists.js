@@ -86,7 +86,10 @@ async function initPlaylistList() {
   }
 
   try {
-    const songs = await loadSongData();
+    const [songs, playlists] = await Promise.all([
+      loadSongData(),
+      loadPlaylistData(),
+    ]);
     const render = () => {
       const keyword = search.value.trim().toLowerCase();
       const filtered = playlists.filter((playlist) => {
@@ -207,9 +210,10 @@ async function initPlaylistDetail() {
 
   const params = new URLSearchParams(location.search);
   const playlistId = params.get("id");
-  const playlist = playlists.find((item) => item.id === playlistId) ?? playlists[0];
 
   try {
+    const playlists = await loadPlaylistData();
+    const playlist = playlists.find((item) => item.id === playlistId) ?? playlists[0];
     const songs = getPlaylistSongs(playlist, await loadSongData());
     document.title = `${playlist.title} - Stream Overflow`;
     renderPlaylistDetail(playlist, songs);
