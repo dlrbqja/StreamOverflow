@@ -1,3 +1,4 @@
+// 진입점 + 변수
 document.addEventListener("DOMContentLoaded", async () => {
   const startScreen = document.getElementById("start-screen");
   const gameScreen = document.getElementById("game-screen");
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   let currentMatch = 0;
   let roundSize = 0;
 
+  // 셔플 알고리즘
   function shuffle(array) {
     const arr = [...array];
     for (let i = arr.length - 1; i > 0; i--) {
@@ -27,6 +29,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     return arr;
   }
 
+  // 선택지 생성
   function createOptionCard(song, onSelect) {
     const container = document.createElement("div");
     container.className = "vs-option-card";
@@ -63,7 +66,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     container.append(player, textContainer, button);
     return container;
   }
-
+  // 토너먼트 시작
   function startTournament(size) {
     let selected = shuffle(allSongs);
 
@@ -98,7 +101,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     renderMatch();
   }
-
+  // 현재 매치 렌더링
   function renderMatch() {
     const totalMatches = roundSongs.length / 2;
     const roundNameText = roundSize === 2 ? "결승" : `${roundSize}강`;
@@ -114,6 +117,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     rightOption.appendChild(createOptionCard(songRight, () => handleSelect(songRight)));
   }
 
+  // 선택 처리
   function handleSelect(selectedSong) {
     nextRoundSongs.push(selectedSong);
     currentMatch++;
@@ -134,6 +138,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   }
 
+  // 우승 화면 
   function showWinner(song) {
     gameScreen.style.display = "none";
     winnerScreen.style.display = "flex";
@@ -145,7 +150,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     winnerTitle.textContent = song.name;
     winnerComposer.textContent = song.jakgokga;
   }
-
+  // 초기 로드 + 버튼 이벤트
   try {
     allSongs = await loadSongData();
     

@@ -1,3 +1,4 @@
+// 목록 렌더링
 function renderSongs(songs, list, keyword = "") {
   const searchText = keyword.trim().toLowerCase();
   list.innerHTML = "";
@@ -13,6 +14,7 @@ function renderSongs(songs, list, keyword = "") {
     .forEach((song) => list.append(createSongItem(song)));
 }
 
+// 화면 초기화
 async function initSongList() {
   const list = document.querySelector("#list");
   const search = document.querySelector("#search");
@@ -34,6 +36,7 @@ async function initSongList() {
   }
 }
 
+// 상세 페이지 생성
 function createDetailRow(key, value) {
   const row = document.createElement("div");
   row.className = "detail-row";
@@ -50,6 +53,8 @@ function createDetailRow(key, value) {
   return row;
 }
 
+
+//상세 페이지 초기화
 async function initSongDetail() {
   const detail = document.querySelector("#detail");
 
@@ -89,6 +94,7 @@ async function initSongDetail() {
   }
 }
 
+//진입점
 document.addEventListener("DOMContentLoaded", () => {
   initSongList();
   initSongDetail();

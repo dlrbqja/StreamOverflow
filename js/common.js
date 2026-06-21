@@ -1,3 +1,4 @@
+// 파일 경로 및 라벨 설정
 const songFiles = ["./data/songs.json"];
 const playlistFile = "./data/playlists-data.json";
 
@@ -14,6 +15,7 @@ const labels = {
   illust: "그림/MV",
 };
 
+// 유튜브 ID 추출 
 function getYoutubeVideoId(source) {
   if (!source) {
     return "";
@@ -35,7 +37,7 @@ function getYoutubeVideoId(source) {
     return String(source).split("?")[0];
   }
 }
-
+// 유튜브 플레이어, 썸네일 생성
 function createYoutubePlayer(source, title) {
   const videoId = getYoutubeVideoId(source);
   const iframe = document.createElement("iframe");
@@ -61,10 +63,12 @@ function createYoutubeThumbnail(source, title) {
   return thumbnail;
 }
 
+// 배열 -> 문자열 전환
 function formatValue(value) {
   return Array.isArray(value) ? value.join(", ") : value;
 }
 
+// 라벨 + 값을 span으로 전환
 function createField(key, value) {
   const field = document.createElement("span");
   field.className = "song-field";
@@ -81,6 +85,7 @@ function createField(key, value) {
   return field;
 }
 
+// 노래 카드 생성
 function createSongItem(song, scoreText = "") {
   const item = document.createElement("div");
   item.className = "song-card";
@@ -117,6 +122,7 @@ function createSongItem(song, scoreText = "") {
   return item;
 }
 
+// json  로드
 async function loadSongData() {
   const files = await Promise.all(
     songFiles.map(async (file) => {

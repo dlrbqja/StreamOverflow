@@ -1,3 +1,4 @@
+// 진입점 및 초기 변수
 document.addEventListener("DOMContentLoaded", async () => {
   const cardElement = document.getElementById("random-card");
   const drawBtn = document.getElementById("draw-btn");
@@ -10,6 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   let currentSong = null;
   let isDrawing = false;
 
+  // 곡 선택
   function getRandomSong(songs, currentSong) {
     if (songs.length <= 1) {
       return songs[0];
@@ -21,6 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     return picked;
   }
 
+  // 렌더링
   function displaySong(song) {
     cardElement.innerHTML = "";
 
@@ -29,18 +32,18 @@ document.addEventListener("DOMContentLoaded", async () => {
       return;
     }
 
-    // Create YouTube player
+    // 유튜브 플레이어 생성
     const player = createYoutubePlayer(song.source, song.name);
     cardElement.appendChild(player);
 
-    // Create details
+    // 상세정보 생성
     const details = document.createElement("div");
     details.style.display = "flex";
     details.style.flexDirection = "column";
     details.style.gap = "var(--space-2)";
     details.style.fontSize = "0.95rem";
 
-    // Row 1: 제목 & 길이
+    // 제목 & 길이
     const row1 = document.createElement("div");
     row1.className = "song-row";
     row1.style.justifyContent = "space-between";
@@ -69,7 +72,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     row1.append(col1Left, col1Right);
 
-    // Row 2: 작곡가 & BPM
+    // 작곡가 & BPM
     const row2 = document.createElement("div");
     row2.className = "song-row";
     row2.style.justifyContent = "space-between";
@@ -98,7 +101,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     row2.append(col2Left, col2Right);
 
-    // Row 3: 태그
+    // 태그
     const row3 = document.createElement("div");
     row3.className = "song-row";
 
@@ -117,7 +120,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     details.append(row1, row2, row3);
     cardElement.appendChild(details);
   }
-
+  
+  // 뽑기 실행
   function drawSong() {
     if (songs.length === 0) {
       return;
@@ -126,7 +130,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     displaySong(finalSong);
     currentSong = finalSong;
   }
-
+// 초기 로드
   try {
     songs = await loadSongData();
     if (songs.length > 0) {

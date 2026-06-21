@@ -1,3 +1,4 @@
+// 설문 데이터
 const surveyQuestions = [
   {
     title: "당신의 현재 기분은?",
@@ -73,7 +74,7 @@ const surveyQuestions = [
     ],
   },
 ];
-
+// 점수 계산 유틸
 function addTagScore(scores, tags, amount = 1) {
   tags.forEach((tag) => {
     scores.set(tag, (scores.get(tag) ?? 0) + amount);
@@ -84,6 +85,7 @@ function getBestMatchedTags(songTags, scores) {
   return songTags.filter((tag) => scores.has(tag));
 }
 
+// 추천 알고리즘
 function recommendSongs(songs, answers) {
   const scores = new Map();
 
@@ -102,6 +104,7 @@ function recommendSongs(songs, answers) {
     .slice(0, 3);
 }
 
+// 화면 렌더링
 function renderSurveyQuestion(index, answers, songs) {
   const survey = document.querySelector("#survey");
   const question = surveyQuestions[index];
@@ -145,6 +148,7 @@ function renderSurveyQuestion(index, answers, songs) {
   survey.append(title, panel, progress);
 }
 
+// 결과 렌더링
 function renderRecommendations(songs, answers) {
   const survey = document.querySelector("#survey");
   const results = recommendSongs(songs, answers);
@@ -182,6 +186,7 @@ function renderRecommendations(songs, answers) {
   survey.append(title, list, retry);
 }
 
+// 초기화
 async function initRecommendation() {
   const survey = document.querySelector("#survey");
 
@@ -197,9 +202,6 @@ async function initRecommendation() {
     console.error(error);
   }
 
-  segmaboy_mother = null;
-  segmaboy_father = 2;
-  console.log("세그마보이는 상속받은 클래스가 아니다!!!!!!!!!");
 }
 
 document.addEventListener("DOMContentLoaded", initRecommendation);

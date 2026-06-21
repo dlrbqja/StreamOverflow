@@ -1,3 +1,5 @@
+
+// 상태 변수
 let currentPlaylistState = {
   playlist: null,
   songs: [],
@@ -5,6 +7,7 @@ let currentPlaylistState = {
   playing: false,
 };
 
+// json을 객체 배열로 변환
 function getPlaylistSongs(playlist, songs) {
   return playlist.songIds
     .map((id) => songs.find((song) => String(song.id) === String(id)))
@@ -15,6 +18,7 @@ function getPlaylistTags(songs) {
   return [...new Set(songs.flatMap((song) => song.tag ?? []))].slice(0, 5);
 }
 
+// 문자열 -> 초 변환
 function getPlaylistLength(songs) {
   return songs.reduce((total, song) => {
     const [minutes, seconds] = String(song.length ?? "0:00")
@@ -32,6 +36,7 @@ function formatSeconds(totalSeconds) {
   return `${minutes}:${seconds}`;
 }
 
+// 카드 생성
 function createPlaylistCard(playlist, songs) {
   const playlistSongs = getPlaylistSongs(playlist, songs);
   const coverSong = playlistSongs[0];
@@ -68,6 +73,7 @@ function createPlaylistCard(playlist, songs) {
   return card;
 }
 
+// 데이터 렌더링
 function renderPlaylistList(playlistsToRender, songs) {
   const list = document.querySelector("#playlist-list");
   list.innerHTML = "";
@@ -117,6 +123,7 @@ async function initPlaylistList() {
   }
 }
 
+// 현재 노래 상태
 function setCurrentTrack(index) {
   const { songs } = currentPlaylistState;
 
@@ -146,7 +153,7 @@ function togglePlaylistPlayback() {
     setCurrentTrack(currentPlaylistState.currentIndex);
   }
 }
-
+// 수록곡 목록 생성
 function createPlaylistTrack(song, index) {
   const item = document.createElement("li");
   item.className = "playlist-track";
@@ -175,7 +182,7 @@ function createPlaylistTrack(song, index) {
   item.append(info, detail);
   return item;
 }
-
+// 플레이리스트 상세 렌더링
 function renderPlaylistDetail(playlist, songs) {
   const title = document.querySelector("#playlist-title");
   const description = document.querySelector("#playlist-description");
@@ -223,6 +230,7 @@ async function initPlaylistDetail() {
   }
 }
 
+// 진입점
 document.addEventListener("DOMContentLoaded", () => {
   initPlaylistList();
   initPlaylistDetail();
